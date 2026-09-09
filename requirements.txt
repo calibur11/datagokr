@@ -1,10 +1,4 @@
-os
-sys
-json
-urllib.parse
-re
-datetime
-panda
+pandas
 flask
 requests
 gunicorn

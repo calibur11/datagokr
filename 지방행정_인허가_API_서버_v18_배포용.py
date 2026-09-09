@@ -1557,4 +1557,6 @@ if __name__ == '__main__':
     print(f"  데이터 로드 상태: {len(SECTORS_DATA)}개 업종 정보 탑재 완료")
     print("="*50 + "\n")
     
-    app.run(host='0.0.0.0', port=5001, debug=False)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(host='0.0.0.0', port=port, debug=False)
+    
